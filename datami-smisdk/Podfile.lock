@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 9ab6028c5409241975447d3542189753eb56f9b1
+PODS:
+  - SmiSdk (3.6.1)
+
+DEPENDENCIES:
+  - SmiSdk
+
+SPEC REPOS:
+  https://bitbucket.org/datami/ios-podspec.git:
+    - SmiSdk
+
+SPEC CHECKSUMS:
+  SmiSdk: c16b4f8e5092e588ab04dc366c9742d3fae917a1
+
+PODFILE CHECKSUM: 22cc792a4a1cb63c0ee0013e763db1b94eec0b5e
 
 COCOAPODS: 1.9.3
