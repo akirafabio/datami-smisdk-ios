@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03D2847B9EF6CB28BD62DE19 /* Pods_datami_smisdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BDA3DAD10869FDEC2FAB23 /* Pods_datami_smisdk.framework */; };
 		365C33B7247E08C900726480 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 365C33B6247E08C900726480 /* AppDelegate.m */; };
 		365C33BD247E08C900726480 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365C33BC247E08C900726480 /* ViewController.m */; };
 		365C33C0247E08C900726480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365C33BE247E08C900726480 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07BDA3DAD10869FDEC2FAB23 /* Pods_datami_smisdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_datami_smisdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365C33B2247E08C900726480 /* datami-smisdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "datami-smisdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		365C33B5247E08C900726480 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		365C33B6247E08C900726480 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		365C33C4247E08CA00726480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365C33C6247E08CA00726480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365C33C7247E08CA00726480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C46D718A748FCD6911D289B /* Pods-datami-smisdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datami-smisdk.debug.xcconfig"; path = "Target Support Files/Pods-datami-smisdk/Pods-datami-smisdk.debug.xcconfig"; sourceTree = "<group>"; };
+		91353BEF255C8561812CA19E /* Pods-datami-smisdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datami-smisdk.release.xcconfig"; path = "Target Support Files/Pods-datami-smisdk/Pods-datami-smisdk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D2847B9EF6CB28BD62DE19 /* Pods_datami_smisdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				365C33B4247E08C900726480 /* datami-smisdk */,
 				365C33B3247E08C900726480 /* Products */,
+				7921E08B0A714BDDAE950444 /* Pods */,
+				92518E120D379F1E3E0BB35F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,24 @@
 			path = "datami-smisdk";
 			sourceTree = "<group>";
 		};
+		7921E08B0A714BDDAE950444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C46D718A748FCD6911D289B /* Pods-datami-smisdk.debug.xcconfig */,
+				91353BEF255C8561812CA19E /* Pods-datami-smisdk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92518E120D379F1E3E0BB35F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07BDA3DAD10869FDEC2FAB23 /* Pods_datami_smisdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 365C33CB247E08CA00726480 /* Build configuration list for PBXNativeTarget "datami-smisdk" */;
 			buildPhases = (
+				B02AFF69B247C37E1772B284 /* [CP] Check Pods Manifest.lock */,
 				365C33AE247E08C900726480 /* Sources */,
 				365C33AF247E08C900726480 /* Frameworks */,
 				365C33B0247E08C900726480 /* Resources */,
@@ -136,6 +162,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B02AFF69B247C37E1772B284 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-datami-smisdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		365C33AE247E08C900726480 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		365C33CC247E08CA00726480 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C46D718A748FCD6911D289B /* Pods-datami-smisdk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -298,6 +350,7 @@
 		};
 		365C33CD247E08CA00726480 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91353BEF255C8561812CA19E /* Pods-datami-smisdk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
